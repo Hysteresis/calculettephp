@@ -36,47 +36,49 @@
         </div>
     </div>
     
-<?php 
+    <?php 
 
-    $operateur = $_POST['operateur'];
-    $chiffre1 = $_POST['chiffre1'];
-    $chiffre2 = $_POST['chiffre2'];
-    $resultat = 0;
-    echo "<br>";
-?>
-<div class="container text-center">
-    <div class="row">
-        <div class="col  align-self-center">
-                <?php 
-                    if ($operateur == "+") {
-                        $resultat = $chiffre1 + $chiffre2;
-                        // echo "<div class="">" $chiffre1 . " + " . $chiffre2 . " = " . $resultat . "</div>";
-                        echo '<div class="test">' . $chiffre1 . " + " . $chiffre2 . " = " . $resultat . '</div>';
-                    } 
+        $operateur = $_POST['operateur'];
+        $chiffre1 = $_POST['chiffre1'];
+        $chiffre2 = $_POST['chiffre2'];
+        $resultat = 0;
+        echo "<br>";
+    ?>
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col  align-self-center">
+                    <?php 
+                        if ($operateur == "+") {
+                            $resultat = $chiffre1 + $chiffre2;
+                            // echo "<div class="">" $chiffre1 . " + " . $chiffre2 . " = " . $resultat . "</div>";
+                            echo '<div class="test">' . $chiffre1 . " + " . $chiffre2 . " = " . $resultat . '</div>';
+                        } 
 
-                    if ($operateur == "*") {
-                        $resultat = $chiffre1 * $chiffre2;
-                        echo '<div class="test">' . $chiffre1 . " x " . $chiffre2 . " = " . $resultat . '</div>';
-                    } 
+                        if ($operateur == "*") {
+                            $resultat = $chiffre1 * $chiffre2;
+                            echo '<div class="test">' . $chiffre1 . " x " . $chiffre2 . " = " . $resultat . '</div>';
+                        } 
+                    
+                        if ($operateur == "/" && $chiffre2 !== 0) {
+                            $resultat = $chiffre1 / $chiffre2;
+                            
+                            echo '<div class="test">' . $chiffre1 . " / " . $chiffre2 . " = " . round($resultat, 6) . '</div>';
+                        } 
+                    
+                        if ($operateur == "/" && $chiffre2 == 0){
+                            echo "div by 0 : impossible";
+                        }
+                    
+                        if ($operateur == "-") {
+                            $resultat = $chiffre1 - $chiffre2;
+                            echo '<div class="test">' . $chiffre1 . " - " . $chiffre2 . " = " . $resultat . '</div>';
+                        } 
+                    ?>
                 
-                    if ($operateur == "/" && $chiffre2 !== 0) {
-                        $resultat = $chiffre1 / $chiffre2;
-                        echo '<div class="test">' . $chiffre1 . " / " . $chiffre2 . " = " . $resultat . '</div>';
-                    } 
-                
-                    if ($operateur == "/" && $chiffre2 == 0){
-                        echo "div by 0 : impossible";
-                    }
-                
-                    if ($operateur == "-") {
-                        $resultat = $chiffre1 - $chiffre2;
-                        echo '<div class="test">' . $chiffre1 . " - " . $chiffre2 . " = " . $resultat . '</div>';
-                    } 
-                ?>
-            
+            </div>
         </div>
     </div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

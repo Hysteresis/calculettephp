@@ -1,15 +1,16 @@
 body{
     font-family: 'Zen Dots', cursive; 
     text-align: center;
+    background: rgb(13,13,12);
+    background: radial-gradient(circle, rgba(13,13,12,0.4680845971200981) 0%, rgba(18,19,17,0.07032549347864148) 50%, rgba(22,25,21,0.23559159992121848) 85%, rgba(7,18,17,0.5269081265318627) 100%);
 }
-
 
 #formulaire{
     border-radius: 20px;
     padding: 20px 20px;
     /* margin-left: 30%;
     margin-right: 30%;  */
-    background: rgb(161,180,58); 
+    background: rgba(216, 245, 53, 0.543); 
     background: linear-gradient(90deg, rgba(161,180,58,0.7902134486607143) 0%, rgba(172, 247, 85, 0.519) 50%, rgba(160, 246, 86, 0.712) 100%);
 } 
 
@@ -24,7 +25,7 @@ label.inline {
     }
 
 input, textarea, select, option {
-    background-color:#4e9c4e;
+    background: linear-gradient(90deg, rgba(213, 244, 38, 0.79) 0%, rgba(137, 241, 17, 0.519) 50%, rgba(136, 249, 37, 0.712) 100%);
     }
 
 input, textarea, select {
