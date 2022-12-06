@@ -1,0 +1,50 @@
+body{
+    font-family: 'Zen Dots', cursive; 
+    text-align: center;
+}
+
+
+#formulaire{
+    border-radius: 20px;
+    padding: 20px 20px;
+    /* margin-left: 30%;
+    margin-right: 30%;  */
+    background: rgb(161,180,58); 
+    background: linear-gradient(90deg, rgba(161,180,58,0.7902134486607143) 0%, rgba(172, 247, 85, 0.519) 50%, rgba(160, 246, 86, 0.712) 100%);
+} 
+
+label {
+    margin-top:10px;
+    display:block;
+    }
+
+label.inline {
+    display:inline;
+    margin-right:50px;
+    }
+
+input, textarea, select, option {
+    background-color:#4e9c4e;
+    }
+
+input, textarea, select {
+    padding:5px;
+    border:2px solid #202227;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
+
+    .test{
+        background: url("ecranLCDCalculette.png") no-repeat center;
+        height: 200px;
+        padding-top: 60px;
+        font-size: 2em;
+        border-radius: 15px;
+        /* background: rgb(161,180,58);
+        background: linear-gradient(90deg, rgba(48, 10, 172, 0.79) 0%, rgba(93,253,29,0.5185047651873249) 50%, rgba(69,252,244,0.34483529740021013) 100%);
+        border-radius: 20px;
+        padding: 20px 20px;
+        margin-left: 30%;
+        margin-right: 30%;  */
+    }
